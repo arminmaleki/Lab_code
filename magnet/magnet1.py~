@@ -1,0 +1,7 @@
+import numpy as np
+from scipy.integrate import quad
+
+def phi(x1,x2,y,z):
+    return np.ln(np.abs(  (x2+np.sqrt(x2**2+z**2+y**2))/(x1+np.sqrt(x1**2+z**2+y**2))  ))
+
+phi(-1,1,0,1)
